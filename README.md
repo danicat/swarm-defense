@@ -29,15 +29,15 @@ What makes this game truly unique is its origin story: **every single line of co
 
 The codebase was decomposed by the AI swarm into highly cohesive, specialized modules:
 
-| File | Subagent / Specialist | Purpose |
-| :--- | :--- | :--- |
-| `main.go` | **System Architect** | Entry point that initializes the OS window, configures audio contexts, and launches the Ebitengine game loop. |
-| `game.go` | **Gameplay Coordinator** | Controls core scene transitions, phase switching (build/battle), level updates, and frame-by-frame orchestration. |
-| `entities.go` | **Backend Engineer** | Defines state models, attack patterns, stat blocks, and movement pathfinding for players, towers, and monsters. |
-| `sprites.go` | **Art Specialist** | Houses custom binary/bitmap rendering definitions, programmatically designing every frame of sprite and tile animation on the fly. |
-| `sound.go` | **Audio Engineer** | Contains mathematical sound synth generators that calculate and pipe live audio frequencies directly to the OS audio stream. |
-| `ui.go` | **Frontend Engineer** | Renders HUD overlays, coin trackers, health bars, retro menus, and dialogs. |
-| `save.go` | **Systems QA** | Handles local IO operation to safely serialize, persist, and load player high-scores. |
+| File | Purpose |
+| :--- | :--- |
+| `main.go` | Entry point that initializes the OS window, configures audio contexts, and launches the Ebitengine game loop. |
+| `game.go` | Controls core scene transitions, phase switching (build/battle), level updates, and frame-by-frame orchestration. |
+| `entities.go` | Defines state models, attack patterns, stat blocks, and movement pathfinding for players, towers, and monsters. |
+| `sprites.go` | Houses custom binary/bitmap rendering definitions, programmatically designing every frame of sprite and tile animation on the fly. |
+| `sound.go` | Contains mathematical sound synth generators that calculate and pipe live audio frequencies directly to the OS audio stream. |
+| `ui.go` | Renders HUD overlays, coin trackers, health bars, retro menus, and dialogs. |
+| `save.go` | Handles local IO operation to safely serialize, persist, and load player high-scores. |
 
 ---
 
@@ -65,4 +65,4 @@ go run .
 
 ## 📄 License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available under the Apache 2.0 License.
