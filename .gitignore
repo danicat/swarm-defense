@@ -1,0 +1,17 @@
+# Binaries
+swarm-defense
+swarm-defense.exe
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# IDEs
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
